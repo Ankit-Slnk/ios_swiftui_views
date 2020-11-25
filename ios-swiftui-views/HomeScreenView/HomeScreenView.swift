@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        Button
+        NavigationView {
+            ScrollView{
+                NavigationLink(destination: DrawerScreenView()){
+                    Text("Drawer")
+                }.buttonStyle(PlainButtonStyle())
+                                
+                NavigationLink(destination: BottomNavigationBarScreen()){
+                    Text("Bottom Navgation Bar")
+                }.buttonStyle(PlainButtonStyle())
+            }
+        }
     }
 }
 

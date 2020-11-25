@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CEE04C36256E825200C3C5B5 /* ios_swiftui_viewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C35256E825200C3C5B5 /* ios_swiftui_viewsApp.swift */; };
-		CEE04C38256E825200C3C5B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C37256E825200C3C5B5 /* ContentView.swift */; };
+		CEE04C38256E825200C3C5B5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C37256E825200C3C5B5 /* HomeScreenView.swift */; };
 		CEE04C3A256E825400C3C5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE04C39256E825400C3C5B5 /* Assets.xcassets */; };
 		CEE04C3D256E825400C3C5B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE04C3C256E825400C3C5B5 /* Preview Assets.xcassets */; };
+		CEE04C4C256E83C000C3C5B5 /* DrawerScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C4B256E83C000C3C5B5 /* DrawerScreenView.swift */; };
+		CEE04C51256E875B00C3C5B5 /* BottomNavigationBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C50256E875B00C3C5B5 /* BottomNavigationBarScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEE04C32256E825200C3C5B5 /* ios-swiftui-views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swiftui-views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE04C35256E825200C3C5B5 /* ios_swiftui_viewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swiftui_viewsApp.swift; sourceTree = "<group>"; };
-		CEE04C37256E825200C3C5B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEE04C37256E825200C3C5B5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		CEE04C39256E825400C3C5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE04C3C256E825400C3C5B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE04C3E256E825400C3C5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE04C4B256E83C000C3C5B5 /* DrawerScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerScreenView.swift; sourceTree = "<group>"; };
+		CEE04C50256E875B00C3C5B5 /* BottomNavigationBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBarScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		CEE04C34256E825200C3C5B5 /* ios-swiftui-views */ = {
 			isa = PBXGroup;
 			children = (
+				CEE04C4F256E874300C3C5B5 /* BottomNavigationBarScreen */,
+				CEE04C4A256E839D00C3C5B5 /* Drawer */,
+				CEE04C46256E828500C3C5B5 /* HomeScreenView */,
 				CEE04C35256E825200C3C5B5 /* ios_swiftui_viewsApp.swift */,
-				CEE04C37256E825200C3C5B5 /* ContentView.swift */,
 				CEE04C39256E825400C3C5B5 /* Assets.xcassets */,
 				CEE04C3E256E825400C3C5B5 /* Info.plist */,
 				CEE04C3B256E825400C3C5B5 /* Preview Content */,
@@ -67,6 +73,30 @@
 				CEE04C3C256E825400C3C5B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEE04C46256E828500C3C5B5 /* HomeScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				CEE04C37256E825200C3C5B5 /* HomeScreenView.swift */,
+			);
+			path = HomeScreenView;
+			sourceTree = "<group>";
+		};
+		CEE04C4A256E839D00C3C5B5 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				CEE04C4B256E83C000C3C5B5 /* DrawerScreenView.swift */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		CEE04C4F256E874300C3C5B5 /* BottomNavigationBarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE04C50256E875B00C3C5B5 /* BottomNavigationBarScreen.swift */,
+			);
+			path = BottomNavigationBarScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE04C38256E825200C3C5B5 /* ContentView.swift in Sources */,
+				CEE04C51256E875B00C3C5B5 /* BottomNavigationBarScreen.swift in Sources */,
+				CEE04C4C256E83C000C3C5B5 /* DrawerScreenView.swift in Sources */,
+				CEE04C38256E825200C3C5B5 /* HomeScreenView.swift in Sources */,
 				CEE04C36256E825200C3C5B5 /* ios_swiftui_viewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

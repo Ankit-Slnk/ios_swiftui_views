@@ -9,7 +9,42 @@ import SwiftUI
 
 struct BottomNavigationBarScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            TabView {
+                List(1...10, id: \.self) { index in
+                    NavigationLink(
+                        destination: Text("Item #\(index) Details"),
+                        label: {
+                            Text("Item #\(index)")
+                                .font(.system(size: 20, weight: .bold, design: .rounded))
+                        })
+                    
+                }
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("Favourites")
+                }
+                
+                Text("Friends Screen")
+                    .tabItem {
+                        Image(systemName: "person.fill")
+                        Text("Friends")
+                    }
+                
+                Text("Nearby Screen")
+                    .tabItem {
+                        Image(systemName: "mappin.circle.fill")
+                        Text("Nearby")
+                    }
+            }
+            //            .onAppear() {
+            //                 to change background color of bottom bar
+            //                UITabBar.appearance().barTintColor = .white
+            //            }
+            .accentColor(Color.red)
+            
+            .navigationTitle("TabView Demo")
+        }
     }
 }
 
