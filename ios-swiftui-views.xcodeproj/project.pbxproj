@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3F9963256F670B00A984CF /* PickerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F9962256F670B00A984CF /* PickerControls.swift */; };
+		CE3F9968256F698900A984CF /* CheckboxRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F9967256F698900A984CF /* CheckboxRadioButtons.swift */; };
+		CE3F996B256F6A7700A984CF /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F996A256F6A7700A984CF /* RadioButtonField.swift */; };
+		CE3F996E256F6A9500A984CF /* RadioButtonGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F996D256F6A9500A984CF /* RadioButtonGroups.swift */; };
+		CE3F9972256F6C1800A984CF /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F9971256F6C1800A984CF /* Switch.swift */; };
 		CEE04C36256E825200C3C5B5 /* ios_swiftui_viewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C35256E825200C3C5B5 /* ios_swiftui_viewsApp.swift */; };
 		CEE04C38256E825200C3C5B5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE04C37256E825200C3C5B5 /* HomeScreenView.swift */; };
 		CEE04C3A256E825400C3C5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE04C39256E825400C3C5B5 /* Assets.xcassets */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3F9962256F670B00A984CF /* PickerControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerControls.swift; sourceTree = "<group>"; };
+		CE3F9967256F698900A984CF /* CheckboxRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxRadioButtons.swift; sourceTree = "<group>"; };
+		CE3F996A256F6A7700A984CF /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
+		CE3F996D256F6A9500A984CF /* RadioButtonGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroups.swift; sourceTree = "<group>"; };
+		CE3F9971256F6C1800A984CF /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		CEE04C32256E825200C3C5B5 /* ios-swiftui-views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swiftui-views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE04C35256E825200C3C5B5 /* ios_swiftui_viewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swiftui_viewsApp.swift; sourceTree = "<group>"; };
 		CEE04C37256E825200C3C5B5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -37,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3F9961256F66ED00A984CF /* PickerControl */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F9962256F670B00A984CF /* PickerControls.swift */,
+			);
+			path = PickerControl;
+			sourceTree = "<group>";
+		};
+		CE3F9966256F697700A984CF /* CheckboxRadios */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F9967256F698900A984CF /* CheckboxRadioButtons.swift */,
+				CE3F996A256F6A7700A984CF /* RadioButtonField.swift */,
+				CE3F996D256F6A9500A984CF /* RadioButtonGroups.swift */,
+			);
+			path = CheckboxRadios;
+			sourceTree = "<group>";
+		};
+		CE3F9970256F6BFE00A984CF /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F9971256F6C1800A984CF /* Switch.swift */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
 		CEE04C29256E825100C3C5B5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +92,9 @@
 		CEE04C34256E825200C3C5B5 /* ios-swiftui-views */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F9970256F6BFE00A984CF /* Switch */,
+				CE3F9966256F697700A984CF /* CheckboxRadios */,
+				CE3F9961256F66ED00A984CF /* PickerControl */,
 				CEE04C4F256E874300C3C5B5 /* BottomNavigationBarScreen */,
 				CEE04C4A256E839D00C3C5B5 /* Drawer */,
 				CEE04C46256E828500C3C5B5 /* HomeScreenView */,
@@ -168,8 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F9968256F698900A984CF /* CheckboxRadioButtons.swift in Sources */,
 				CEE04C51256E875B00C3C5B5 /* BottomNavigationBarScreen.swift in Sources */,
 				CEE04C4C256E83C000C3C5B5 /* DrawerScreenView.swift in Sources */,
+				CE3F9972256F6C1800A984CF /* Switch.swift in Sources */,
+				CE3F9963256F670B00A984CF /* PickerControls.swift in Sources */,
+				CE3F996B256F6A7700A984CF /* RadioButtonField.swift in Sources */,
+				CE3F996E256F6A9500A984CF /* RadioButtonGroups.swift in Sources */,
 				CEE04C38256E825200C3C5B5 /* HomeScreenView.swift in Sources */,
 				CEE04C36256E825200C3C5B5 /* ios_swiftui_viewsApp.swift in Sources */,
 			);
